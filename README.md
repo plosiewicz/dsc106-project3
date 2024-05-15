@@ -1,5 +1,4 @@
 # dsc106-project3
-# dsc106_project3
 
 For our visualization, we chose an IMDb movie dataset and chose to use the visualization to display quantitative visuals compared with categorical variables through bubble charts. We chose bubble charts because they are suitable for displaying hierarchical data and allow for easy comparison of values between different categories. The specific way we organized this bubble chart is designed to see all of the data and being able to compare it to a specified genre.
 
