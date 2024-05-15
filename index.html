@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        * {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p,
+        text {
+            font-size: 0.85em;
+        }
+
+        svg {
+            background: #222;
+        }
+
+        /* Tooltip style */
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            width: auto;
+            height: auto;
+            padding: 5px;
+            font: 12px sans-serif;
+            background: #fff;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            pointer-events: none;
+        }
+
+        /* Button style */
+        .button-container {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            /* Adjust the top margin as needed */
+
+        }
+
+        .button {
+            background-color: lightblue;
+            border: none;
+            color: #444;
+            padding: 6px 12px;
+            /* Adjusted padding */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            /* Adjusted font size */
+            margin-bottom: 4px;
+            /* Adjusted margin */
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            max-width: 140px;
+            /* Adjusted maximum width */
+            overflow: hidden;
+            /* Hide overflow */
+            text-overflow: ellipsis;
+            /* Add ellipsis for overflow */
+            white-space: nowrap;
+            /* Prevent text wrap */
+        }
+
+        .button:hover {
+            background-color: #ddd;
+        }
+
+        .title {
+            font-size: 30px;
+            text-align: center;
+            /* Center text horizontally */
+            position: absolute;
+            /* Position the title */
+            top: 40px;
+            /* Adjust vertical position */
+            left: 50%;
+            /* Center horizontally */
+            transform: translateX(-50%);
+            /* Center horizontally */
+            color: white;
+            /* Set text color */
+        }
+
+        .selected-button {
+            background-color: lightcoral;
+            /* Change the background color as desired */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="title" style="color: white;">What Makes a Blockbuster?: A Look into the Top 250 Internationally Grossing
+        Movies of all Time</div>
+    <div class="button-container">
+        <button id="adventure" class="button">Adventure</button>
+        <button id="action" class="button">Action</button>
+        <button id="musical" class="button">Musical</button>
+        <button id="western" class="button">Western</button>
+        <button id="mystery" class="button">Mystery</button>
+        <button id="thriller" class="button">Thriller</button>
+        <button id="romance" class="button">Romance</button>
+        <button id="scifi" class="button">Sci-Fi</button>
+        <button id="drama" class="button">Drama</button>
+        <button id="family" class="button">Family</button>
+        <button id="history" class="button">History</button>
+        <button id="fantasy" class="button">Fantasy</button>
+        <button id="biography" class="button">Biography</button>
+        <button id="crime" class="button">Crime</button>
+        <button id="comedy" class="button">Comedy</button>
+        <button id="horror" class="button">Horror</button>
+        <button id="music" class="button">Music</button>
+        <button id="animation" class="button">Animation</button>
+        <button id="combined" class="button">Combined</button>
+    </div>
+    <div id="chart"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+    <script src="bubbles.js"></script>
+
+
+</body>
+
+
+</html>
